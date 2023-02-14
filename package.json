@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "react-native-numeric-input": "^1.9.1",
-    "react-native-vector-icons": "^9.2.0"
-  }
-}
