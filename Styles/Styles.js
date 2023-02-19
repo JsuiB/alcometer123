@@ -63,6 +63,7 @@ const Styles = StyleSheet.create({
     alignItems: "baseline",
     justifyContent: "center",
   },
+  
 });
 
 // SpecialStyles
@@ -77,9 +78,7 @@ const SpecialStyles = StyleSheet.create({
   input: {
     ...Styles.input,
   },
-  
-  
-  
+ 
 });
 
 export { Styles, SpecialStyles };

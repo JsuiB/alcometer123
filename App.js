@@ -30,6 +30,9 @@ export default function App() {
   const myStyle = IsSpecial ? SpecialStyles : Styles;
   const toggleSwitch = () => setSpecial((previousState) => !previousState);
 
+  
+  
+
   // Radiobutton options
   const options = [
     {
@@ -58,9 +61,6 @@ export default function App() {
     setTulos(määrä);
   };
 
-  
-
-
 
 
 
@@ -81,10 +81,23 @@ export default function App() {
         />
 
         <Text> Bottles </Text>
-        <NumericInput setValue={pullot} onChange={(v) => setPullot(v)} />
+        <NumericInput
+          rightButtonBackgroundColor="#00A3FF"
+          leftButtonBackgroundColor="#00A3FF"
+          rounded
+          setValue={pullot}
+          onChange={(v) => setPullot(v)}
+        />
 
         <Text> Hours </Text>
-        <NumericInput setValue={aika} onChange={(v) => setAika(v)} />
+        <NumericInput
+          style={myStyle.NumericInput}
+          rightButtonBackgroundColor="#00A3FF"
+          leftButtonBackgroundColor="#00A3FF"
+          rounded
+          setValue={aika}
+          onChange={(v) => setAika(v)}
+        />
 
         <Radiobutton
           options={options}
